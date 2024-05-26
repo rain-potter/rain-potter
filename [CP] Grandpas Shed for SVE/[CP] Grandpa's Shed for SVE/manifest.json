@@ -1,0 +1,29 @@
+{
+    "Name": "Grandpa's Shed for SVE",
+    "Author": "singerperson",
+    "Version": "1.0.0",
+    "Description": "A retexture for the exterior of Grandpa's Shed in Stardew Valley Expanded. Hopefully also with seasonal options if I do that.",
+    "UniqueID": "singerperson.GrandpasShedforSVE",
+    "UpdateKeys": [], // when you release the mod, see https://stardewvalleywiki.com/Modding:Modder_Guide/APIs/Update_checks
+    "ContentPackFor": {
+        "UniqueID": "Pathoschild.ContentPatcher"
+    },
+    "Dependencies": [
+        {
+           "UniqueID": "Pathoschild.ContentPatcher",
+           "IsRequired": true,
+        },
+        {
+           "UniqueID": "FlashShifter.GrandpasFarmFTM",
+           "IsRequired": false,
+        },
+       {
+           "UniqueID": "FlashShifter.StardewValleyExpandedCP",
+           "IsRequired": true,
+        },
+        {
+           "UniqueID": "flashshifter.immersivefarm2remastered",
+           "IsRequired": false,
+        }
+       ]
+}

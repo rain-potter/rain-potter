@@ -1,0 +1,37 @@
+{
+    "Format": "2.0.0",
+    "ConfigSchema": {
+
+        "Decor Style": {"AllowValues": "Wreath, Lamps Solo, Lamps, Planters, Plant Box, Filigree, Baskets, False",
+        "Default": "Wreath, Lamps",
+        "AllowMultiple": true},
+
+        "Color Palette": {"AllowValues": "Red, Yellow, Green, Olive, Periwinkle",
+        "Default": "Green",
+        "AllowBlank": true}
+    },
+
+    "Changes": [
+        {
+            "Action": "EditImage", 
+            "Target": "Maps/{{season}}_z_extras",
+            "FromFile": "assets/Tilesheets/{{TargetWithoutPath}}.png"
+        },
+        {
+            "Action": "EditImage",
+            "PatchMode": "Overlay",
+            "Target": "Maps/{{season}}_z_extras",
+            "FromFile": "assets/Colors/{{Color Palette}}/{{TargetWithoutPath}}.png"
+        },   
+        {
+            "Action": "EditImage",
+            "PatchMode": "Overlay",
+            "Target": "Maps/{{season}}_z_extras",
+            "FromFile": "assets/Decor/{{Decor Style}}/{{TargetWithoutPath}}.png",
+            "When": {
+            "Decor Style": "Wreath, Lamps Solo, Lamps, Planters, Baskets, Filigree"    
+            }
+        }
+        
+    ]
+}
